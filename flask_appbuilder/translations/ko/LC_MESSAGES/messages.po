@@ -1,0 +1,1152 @@
+# Korean translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-12-28 11:33+0300\n"
+"PO-Revision-Date: 2020-03-02 21:37+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: flask_appbuilder/const.py:126
+msgid "Access is Denied"
+msgstr "액세스가 거부되었습니다"
+
+#: flask_appbuilder/fields.py:163 flask_appbuilder/fields.py:165
+#: flask_appbuilder/fields.py:226 flask_appbuilder/fields.py:233
+#: flask_appbuilder/fields.py:292
+msgid "Not a valid choice"
+msgstr "유효한 선택이 아닙니다"
+
+#: flask_appbuilder/fieldwidgets.py:159 flask_appbuilder/fieldwidgets.py:179
+msgid "Select Value"
+msgstr "값을 선택해 주세요"
+
+#: flask_appbuilder/messages.py:9
+#: flask_appbuilder/templates/appbuilder/general/charts/chart.html:8
+#: flask_appbuilder/templates/appbuilder/general/charts/chart_time.html:10
+#: flask_appbuilder/templates/appbuilder/general/charts/jsonchart.html:8
+#: flask_appbuilder/templates/appbuilder/general/lib.html:366
+#: flask_appbuilder/templates/appbuilder/general/model/list.html:8
+msgid "Search"
+msgstr "검색"
+
+#: flask_appbuilder/messages.py:10
+#: flask_appbuilder/templates/appbuilder/general/lib.html:373
+#: flask_appbuilder/templates/appbuilder/general/lib.html:374
+msgid "Back"
+msgstr "뒤로"
+
+#: flask_appbuilder/messages.py:11
+#: flask_appbuilder/templates/appbuilder/general/lib.html:313
+msgid "Save"
+msgstr "저장"
+
+#: flask_appbuilder/messages.py:12
+msgid "This field is required."
+msgstr "이 항목은 필수 값입니"
+
+#: flask_appbuilder/messages.py:13
+msgid "Not a valid date value"
+msgstr "유효하지 않은 날짜 값입니다"
+
+#: flask_appbuilder/messages.py:14
+#: flask_appbuilder/templates/appbuilder/general/widgets/base_list.html:39
+#: flask_appbuilder/templates/appbuilder/general/widgets/list_carousel.html:50
+#: flask_appbuilder/templates/appbuilder/general/widgets/list_master.html:17
+msgid "No records found"
+msgstr "레코드가 없습니다"
+
+#: flask_appbuilder/upload.py:158 flask_appbuilder/upload.py:210
+msgid "Invalid file extension"
+msgstr "유효하지 않은 파일 확장자 입니다"
+
+#: flask_appbuilder/validators.py:52
+msgid "Already exists."
+msgstr "이미 존재함"
+
+#: flask_appbuilder/validators.py:87
+msgid ""
+"Must have at least two capital letters, one special character, two "
+"digits, three lower case letters and a minimal length of 10."
+msgstr ""
+
+#: flask_appbuilder/views.py:57 flask_appbuilder/views.py:76
+msgid "Not authenticated"
+msgstr ""
+
+#: flask_appbuilder/views.py:84
+msgid "No new password provided"
+msgstr ""
+
+#: flask_appbuilder/views.py:87
+msgid "New password cannot be the same as the old password"
+msgstr ""
+
+#: flask_appbuilder/views.py:105
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "비밀번호가 변경되었습니다"
+
+#: flask_appbuilder/charts/views.py:35
+msgid "Group by"
+msgstr "그룹화"
+
+#: flask_appbuilder/models/base.py:30
+msgid "Added Row"
+msgstr "행이 추가되었습니다"
+
+#: flask_appbuilder/models/base.py:31
+msgid "Changed Row"
+msgstr "행이 수정되었습니다"
+
+#: flask_appbuilder/models/base.py:32
+msgid "Deleted Row"
+msgstr "행이 삭제되었습니다"
+
+#: flask_appbuilder/models/base.py:33
+msgid "Associated data exists, please delete them first"
+msgstr "관련된 데이터가 존재합니다 먼저 삭제해 주세요"
+
+#: flask_appbuilder/models/base.py:36 flask_appbuilder/models/base.py:39
+msgid "Integrity error, probably unique constraint"
+msgstr "무결성 오류, 고유한 제약조건"
+
+#: flask_appbuilder/models/base.py:42
+msgid "General Error"
+msgstr "표준 에러"
+
+#: flask_appbuilder/models/base.py:44
+msgid "Database Error"
+msgstr ""
+
+#: flask_appbuilder/models/group.py:32
+msgid "Count of"
+msgstr "카운트"
+
+#: flask_appbuilder/models/group.py:41
+msgid "Sum of"
+msgstr "합계"
+
+#: flask_appbuilder/models/group.py:50
+msgid "Avg. of"
+msgstr "평균"
+
+#: flask_appbuilder/models/generic/filters.py:20
+#: flask_appbuilder/models/mongoengine/filters.py:76
+#: flask_appbuilder/models/sqla/filters.py:120
+msgid "Contains"
+msgstr "포함"
+
+#: flask_appbuilder/models/generic/filters.py:31
+msgid "Contains (insensitive)"
+msgstr ""
+
+#: flask_appbuilder/models/generic/filters.py:38
+#: flask_appbuilder/models/mongoengine/filters.py:84
+#: flask_appbuilder/models/sqla/filters.py:129
+msgid "Not Contains"
+msgstr "포함 안 함"
+
+#: flask_appbuilder/models/generic/filters.py:45
+#: flask_appbuilder/models/mongoengine/filters.py:22
+#: flask_appbuilder/models/sqla/filters.py:138
+msgid "Equal to"
+msgstr "같은"
+
+#: flask_appbuilder/models/generic/filters.py:52
+#: flask_appbuilder/models/mongoengine/filters.py:33
+#: flask_appbuilder/models/sqla/filters.py:148
+msgid "Not Equal to"
+msgstr "같지 않은"
+
+#: flask_appbuilder/models/generic/filters.py:59
+#: flask_appbuilder/models/mongoengine/filters.py:44
+#: flask_appbuilder/models/sqla/filters.py:159
+msgid "Greater than"
+msgstr "보다 큼"
+
+#: flask_appbuilder/models/generic/filters.py:66
+#: flask_appbuilder/models/mongoengine/filters.py:52
+#: flask_appbuilder/models/sqla/filters.py:173
+msgid "Smaller than"
+msgstr "보다 작은"
+
+#: flask_appbuilder/models/generic/filters.py:73
+msgid "Start with"
+msgstr ""
+
+#: flask_appbuilder/models/mongoengine/filters.py:60
+#: flask_appbuilder/models/sqla/filters.py:84
+msgid "Starts with"
+msgstr ""
+
+#: flask_appbuilder/models/mongoengine/filters.py:68
+#: flask_appbuilder/models/sqla/filters.py:93
+msgid "Not Starts with"
+msgstr ""
+
+#: flask_appbuilder/models/mongoengine/filters.py:92
+#: flask_appbuilder/models/sqla/filters.py:187
+msgid "Relation"
+msgstr "관계"
+
+#: flask_appbuilder/models/mongoengine/filters.py:101
+#: flask_appbuilder/models/sqla/filters.py:229
+msgid "Relation as Many"
+msgstr ""
+
+#: flask_appbuilder/models/sqla/filters.py:102
+msgid "Ends with"
+msgstr ""
+
+#: flask_appbuilder/models/sqla/filters.py:111
+msgid "Not Ends with"
+msgstr ""
+
+#: flask_appbuilder/models/sqla/filters.py:208
+msgid "No Relation"
+msgstr ""
+
+#: flask_appbuilder/security/forms.py:25
+msgid "OpenID"
+msgstr ""
+
+#: flask_appbuilder/security/forms.py:26 flask_appbuilder/security/forms.py:31
+#: flask_appbuilder/security/forms.py:70 flask_appbuilder/security/forms.py:109
+#: flask_appbuilder/security/views.py:158
+#: flask_appbuilder/security/views.py:407
+msgid "User Name"
+msgstr "사용자명"
+
+#: flask_appbuilder/security/forms.py:27
+msgid "Remember me"
+msgstr "로그인 상태 유지"
+
+#: flask_appbuilder/security/forms.py:32 flask_appbuilder/security/forms.py:52
+#: flask_appbuilder/security/forms.py:90 flask_appbuilder/security/views.py:159
+#: flask_appbuilder/security/views.py:306
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:30
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:27
+msgid "Password"
+msgstr "비밀번호"
+
+#: flask_appbuilder/security/forms.py:37 flask_appbuilder/security/forms.py:75
+#: flask_appbuilder/security/forms.py:114
+#: flask_appbuilder/security/views.py:156
+msgid "First Name"
+msgstr "이름"
+
+#: flask_appbuilder/security/forms.py:40 flask_appbuilder/security/views.py:173
+msgid "Write the user first name or names"
+msgstr "사용자 이름을 입력해 주세요"
+
+#: flask_appbuilder/security/forms.py:43 flask_appbuilder/security/forms.py:80
+#: flask_appbuilder/security/forms.py:119
+#: flask_appbuilder/security/views.py:157
+msgid "Last Name"
+msgstr "성"
+
+#: flask_appbuilder/security/forms.py:46 flask_appbuilder/security/views.py:174
+msgid "Write the user last name"
+msgstr "성을 입력해 주세요"
+
+#: flask_appbuilder/security/forms.py:53 flask_appbuilder/security/forms.py:91
+msgid ""
+"Please use a good password policy, this application does not check this "
+"for you"
+msgstr "안전한 암호를 입력해주세요, 이 애플리케이션은 비밀번호 규칙을 확인하지 않습니다"
+
+#: flask_appbuilder/security/forms.py:61 flask_appbuilder/security/forms.py:99
+#: flask_appbuilder/security/views.py:312
+msgid "Confirm Password"
+msgstr "비밀번호 확인"
+
+#: flask_appbuilder/security/forms.py:62 flask_appbuilder/security/forms.py:100
+msgid "Please rewrite the password to confirm"
+msgstr "비밀번호 확인을 입력해 주세요"
+
+#: flask_appbuilder/security/forms.py:63 flask_appbuilder/security/forms.py:101
+#: flask_appbuilder/security/views.py:316
+msgid "Passwords must match"
+msgstr "비밀번호가 일치하지 않습니다"
+
+#: flask_appbuilder/security/forms.py:85 flask_appbuilder/security/forms.py:124
+#: flask_appbuilder/security/views.py:161
+msgid "Email"
+msgstr "이메일"
+
+#: flask_appbuilder/security/manager.py:749
+#: flask_appbuilder/security/views.py:149
+msgid "List Users"
+msgstr "사용자 목록"
+
+#: flask_appbuilder/security/manager.py:752
+msgid "Security"
+msgstr "보안"
+
+#: flask_appbuilder/security/manager.py:759
+#: flask_appbuilder/security/views.py:488
+msgid "List Roles"
+msgstr "역할 목록"
+
+#: flask_appbuilder/security/manager.py:770
+msgid "User's Statistics"
+msgstr "사용자 통계"
+
+#: flask_appbuilder/security/manager.py:778
+msgid "User Registrations"
+msgstr "사용자 등록"
+
+#: flask_appbuilder/security/manager.py:787
+#, fuzzy
+msgid "Login log"
+msgstr "로그인"
+
+#: flask_appbuilder/security/manager.py:795
+#, fuzzy
+msgid "My login log"
+msgstr "로그인 횟수"
+
+#: flask_appbuilder/security/manager.py:804
+msgid "Base Permissions"
+msgstr "기본 권한"
+
+#: flask_appbuilder/security/manager.py:812
+msgid "Views/Menus"
+msgstr "뷰/메뉴"
+
+#: flask_appbuilder/security/manager.py:822
+msgid "Permission on Views/Menus"
+msgstr "뷰/메뉴 권한"
+
+#: flask_appbuilder/security/manager.py:926
+#: flask_appbuilder/security/manager.py:1109
+msgid "Your account is temporarily blocked due to multiple failed login attempts."
+msgstr ""
+
+#: flask_appbuilder/security/registerviews.py:55
+msgid "Account activation"
+msgstr "계정 활성화"
+
+#: flask_appbuilder/security/registerviews.py:59
+msgid "Registration sent to your email"
+msgstr "이메일이 전송되었습니다"
+
+#: flask_appbuilder/security/registerviews.py:61
+msgid "Not possible to register you at the moment, try again later"
+msgstr "등록에 실패하였습니다 잠시 후 다시 시도해주세요"
+
+#: flask_appbuilder/security/registerviews.py:65
+msgid "Registration not found"
+msgstr "등록된 정보를 찾을 수 없습니다."
+
+#: flask_appbuilder/security/registerviews.py:67
+msgid "Fill out the registration form"
+msgstr "가입 정보를 작성해 주세요"
+
+#: flask_appbuilder/security/views.py:43
+msgid "List Base Permissions"
+msgstr "기본 권한 목록"
+
+#: flask_appbuilder/security/views.py:44
+msgid "Show Base Permission"
+msgstr "기본 권한 보기"
+
+#: flask_appbuilder/security/views.py:45
+msgid "Add Base Permission"
+msgstr "기본 권한 추가"
+
+#: flask_appbuilder/security/views.py:46
+msgid "Edit Base Permission"
+msgstr "기본 권한 수정"
+
+#: flask_appbuilder/security/views.py:48 flask_appbuilder/security/views.py:60
+#: flask_appbuilder/security/views.py:497
+msgid "Name"
+msgstr "이름"
+
+#: flask_appbuilder/security/views.py:55
+msgid "List View Menus"
+msgstr "뷰/메뉴 목록"
+
+#: flask_appbuilder/security/views.py:56
+msgid "Show View Menu"
+msgstr "뷰/메뉴 보기"
+
+#: flask_appbuilder/security/views.py:57
+msgid "Add View Menu"
+msgstr "뷰/메뉴 추가"
+
+#: flask_appbuilder/security/views.py:58
+msgid "Edit View Menu"
+msgstr "뷰/메뉴 수정"
+
+#: flask_appbuilder/security/views.py:67
+msgid "List Permissions on Views/Menus"
+msgstr "뷰/메뉴 권한 목록"
+
+#: flask_appbuilder/security/views.py:68
+msgid "Show Permission on Views/Menus"
+msgstr "뷰/메뉴 권한 보기"
+
+#: flask_appbuilder/security/views.py:69
+msgid "Add Permission on Views/Menus"
+msgstr "뷰/메뉴 권한 추가"
+
+#: flask_appbuilder/security/views.py:70
+msgid "Edit Permission on Views/Menus"
+msgstr "뷰/메뉴 권한 수정"
+
+#: flask_appbuilder/security/views.py:73
+msgid "Permission"
+msgstr "권한"
+
+#: flask_appbuilder/security/views.py:74
+msgid "View/Menu"
+msgstr "뷰/메뉴"
+
+#: flask_appbuilder/security/views.py:86 flask_appbuilder/security/views.py:102
+msgid "Reset Password Form"
+msgstr "비밀번호 초기화"
+
+#: flask_appbuilder/security/views.py:88 flask_appbuilder/security/views.py:104
+msgid "Password Changed"
+msgstr "비밀번호가 변경되었습니다"
+
+#: flask_appbuilder/security/views.py:114
+msgid "Edit User Information"
+msgstr "사용자 정보 수정"
+
+#: flask_appbuilder/security/views.py:116
+msgid "User information changed"
+msgstr "사용자 정보가 수정되었습니다"
+
+#: flask_appbuilder/security/views.py:150
+msgid "Show User"
+msgstr "사용자 보기"
+
+#: flask_appbuilder/security/views.py:151
+msgid "Add User"
+msgstr "사용자 추가"
+
+#: flask_appbuilder/security/views.py:152
+#: flask_appbuilder/security/views.py:250
+msgid "Edit User"
+msgstr "사용자 수정"
+
+#: flask_appbuilder/security/views.py:155
+msgid "Full Name"
+msgstr "이름"
+
+#: flask_appbuilder/security/views.py:160
+msgid "Is Active?"
+msgstr "활성?"
+
+#: flask_appbuilder/security/views.py:162
+msgid "Role"
+msgstr "역할"
+
+#: flask_appbuilder/security/views.py:163
+msgid "Last login"
+msgstr "마지막 로그인"
+
+#: flask_appbuilder/security/views.py:164
+#: flask_appbuilder/security/views.py:408
+msgid "Login count"
+msgstr "로그인 횟수"
+
+#: flask_appbuilder/security/views.py:165
+#: flask_appbuilder/security/views.py:409
+msgid "Failed login count"
+msgstr "로그인 실패 횟수"
+
+#: flask_appbuilder/security/views.py:166
+msgid "Created on"
+msgstr "생성일"
+
+#: flask_appbuilder/security/views.py:167
+msgid "Created by"
+msgstr "생성자"
+
+#: flask_appbuilder/security/views.py:168
+msgid "Changed on"
+msgstr "수정일"
+
+#: flask_appbuilder/security/views.py:169
+msgid "Changed by"
+msgstr "수정자"
+
+#: flask_appbuilder/security/views.py:175
+msgid "Username valid for authentication on DB or LDAP, unused for OID auth"
+msgstr "DB 및 LDAP 계정 이름 OID 인증에 사용되지 않습니다"
+
+#: flask_appbuilder/security/views.py:178
+#: flask_appbuilder/security/views.py:307
+msgid "The user's password for authentication"
+msgstr ""
+
+#: flask_appbuilder/security/views.py:179
+msgid "It's not a good policy to remove a user, just make it inactive"
+msgstr "사용자를 삭제하는 것은 좋은 정책이 아닙니다. 비활성화만 해주세요"
+
+#: flask_appbuilder/security/views.py:182
+msgid "The user's email, this will also be used for OID auth"
+msgstr "사용자의 이메일 이 메일은 OID 인증에도 사용됩니다"
+
+#: flask_appbuilder/security/views.py:188
+#: flask_appbuilder/security/views.py:313
+msgid "Please rewrite the user's password to confirm"
+msgstr "비밀번호 확인을 작성해 주세요"
+
+#: flask_appbuilder/security/views.py:195
+#: flask_appbuilder/security/views.py:220
+msgid "User info"
+msgstr "사용자 정보"
+
+#: flask_appbuilder/security/views.py:199
+#: flask_appbuilder/security/views.py:224
+msgid "Personal Info"
+msgstr "개인정보"
+
+#: flask_appbuilder/security/views.py:203
+msgid "Audit Info"
+msgstr ""
+
+#: flask_appbuilder/security/views.py:233
+msgid "Your user information"
+msgstr "내 정보"
+
+#: flask_appbuilder/security/views.py:375
+msgid "Reset my password"
+msgstr "내 비밀번호 초기화"
+
+#: flask_appbuilder/security/views.py:386
+msgid "Reset Password"
+msgstr "비밀번호 초기화"
+
+#: flask_appbuilder/security/views.py:405
+msgid "User Statistics"
+msgstr "사용자 통계"
+
+#: flask_appbuilder/security/views.py:443
+#: flask_appbuilder/security/views.py:527
+msgid "List of Registration Requests"
+msgstr "사용자 등록신청 목록"
+
+#: flask_appbuilder/security/views.py:444
+#: flask_appbuilder/security/views.py:528
+msgid "Show Registration"
+msgstr "사용자 등록 보기"
+
+#: flask_appbuilder/security/views.py:489
+msgid "Show Role"
+msgstr "역할 보기"
+
+#: flask_appbuilder/security/views.py:490
+msgid "Add Role"
+msgstr "역할 추가"
+
+#: flask_appbuilder/security/views.py:491
+msgid "Edit Role"
+msgstr "역할 수정"
+
+#: flask_appbuilder/security/views.py:498
+msgid "Permissions"
+msgstr "권한"
+
+#: flask_appbuilder/security/views.py:508
+msgid "Copy Role"
+msgstr "역할 복사"
+
+#: flask_appbuilder/security/views.py:509
+msgid "Copy the selected roles?"
+msgstr "선택한 역할을 복사하시겠습니까?"
+
+#: flask_appbuilder/security/views.py:537
+msgid "Invalid login. Please try again."
+msgstr "유효하지않은 로그인 정보입니다 로그인 정보를 다시 입력해 주세요"
+
+#: flask_appbuilder/security/views.py:538
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:46
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:40
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:52
+msgid "Sign In"
+msgstr "로그인"
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:42
+msgid "Check the checkbox to agree with"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:43
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:48
+#, fuzzy
+msgid "User Agreement"
+msgstr "사용자명"
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:46
+msgid "I have read and agree with"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:49
+msgid "Send"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:115
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:37
+msgid "Profile"
+msgstr "프로필"
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:116
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:38
+msgid "Logout"
+msgstr "로그아웃"
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:122
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:43
+msgid "Login"
+msgstr "로그인"
+
+#: flask_appbuilder/templates/appbuilder/change_password.html:14
+#: flask_appbuilder/templates/appbuilder/change_password.html:23
+#, fuzzy
+msgid "Change Password"
+msgstr "비밀번호 확인"
+
+#: flask_appbuilder/templates/appbuilder/change_password.html:20
+msgid ""
+"Your account password has expired. Please enter your new password in the "
+"input field below"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/security/activation.html:5
+#: flask_appbuilder/templates/appbuilder/index.html:4
+msgid "Welcome"
+msgstr "환영합니다"
+
+#: flask_appbuilder/templates/appbuilder/general/confirm.html:6
+msgid "User confirmation needed"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:76
+msgid "Actions"
+msgstr "활동"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:115
+msgid "Page size"
+msgstr "페이지"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:135
+msgid "Order by"
+msgstr "정렬"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:333
+msgid "Record Count"
+msgstr "레코드 수"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:382
+msgid "Add a new record"
+msgstr "새로운 레코드 추가"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:383
+msgid "Add"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:390
+msgid "Edit record"
+msgstr "레코드 수정"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:391
+msgid "Edit"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:398
+msgid "Show record"
+msgstr "레코드 보기"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:399
+msgid "Show"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:410
+msgid "Delete record"
+msgstr "레코드 삭제"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:412
+msgid "Delete"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:419
+#, fuzzy
+msgid "Are you sure you want to delete this item?"
+msgstr "이 항목을 삭제하시겠습니까?"
+
+#: flask_appbuilder/templates/appbuilder/general/charts/chart_time.html:17
+msgid "Group by fields"
+msgstr "그룹화 필드"
+
+#: flask_appbuilder/templates/appbuilder/general/model/edit.html:9
+#: flask_appbuilder/templates/appbuilder/general/model/show.html:9
+msgid "Detail"
+msgstr "상세보기"
+
+#: flask_appbuilder/templates/appbuilder/general/security/activation.html:7
+msgid "Your user is activated you can now proceed to login"
+msgstr "사용자가 활성화 되었습니다 로그인을 계속 할 수 있습니다"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:18
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:16
+msgid "Enter your login and password below"
+msgstr "아래의 로그인 정보를 입력해 주세요"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:20
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:18
+msgid "Username"
+msgstr "사용자명"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:49
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:60
+msgid "If you are not already a user, please register"
+msgstr "아직 사용자가 아닌 경우 사용자 등록을 해주세요"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:50
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:61
+msgid "Register"
+msgstr "등록"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oauth.html:20
+#, fuzzy
+msgid "Sign In with "
+msgstr "다음을 사용하여 로그인"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:15
+msgid "Click on your OpenID provider below"
+msgstr "아래의 OpenID 제공자를 클릭해 주세요"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:29
+msgid "Or enter your OpenID here"
+msgstr "또는 여기에 OpenID를 입력해 주세요"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:33
+msgid "Please choose a provider"
+msgstr "제공자를 선택해 주세요"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:37
+msgid "Enter your OpenID Username"
+msgstr "당신의 OpenID 사용자명을 입력해 주세요"
+
+#: flask_appbuilder/templates/appbuilder/general/security/register_oauth.html:15
+msgid "Sign in using:"
+msgstr "다음을 사용하여 로그인"
+
+#: flask_appbuilder/templates/appbuilder/general/widgets/search.html:8
+msgid "Add Filter"
+msgstr "필터 추가"
+
+#~ msgid ""
+#~ "The user role on the application, "
+#~ "this will associate with a list of"
+#~ " permissions"
+#~ msgstr "애플리케이션에 대한 사용자 권한 이것은 권한 목록과 연관이 있습니다"
+
+#~ msgid "Please choose one of the following providers:"
+#~ msgstr "공급자중 하나를 선택해 주세요"
+
+#~ msgid "Emp. Number"
+#~ msgstr "회사 전화번호"
+
+#~ msgid "Employee Number"
+#~ msgstr "회사 전화번호"
+
+#~ msgid "List Groups"
+#~ msgstr "그룹 목록"
+
+#~ msgid "Manage Groups"
+#~ msgstr "그룹 관리"
+
+#~ msgid "List Contacts"
+#~ msgstr ""
+
+#~ msgid "Contacts Chart"
+#~ msgstr ""
+
+#~ msgid "Contacts Birth Chart"
+#~ msgstr ""
+
+#~ msgid "Tweet message"
+#~ msgstr "트윗 메시지"
+
+#~ msgid "Test Field One"
+#~ msgstr ""
+
+#~ msgid "My form View"
+#~ msgstr ""
+
+#~ msgid "Page not found"
+#~ msgstr "페이지를 찾을 수 없습니다"
+
+#~ msgid "{editor}: Editing failed"
+#~ msgstr ""
+
+#~ msgid "{editor}: Editing failed: {e}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click will abort further execution "
+#~ "because Python was configured to use "
+#~ "ASCII as encoding for the environment."
+#~ " Consult https://click.palletsprojects.com/unicode-"
+#~ "support/ for mitigation steps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional information: on this system "
+#~ "no suitable UTF-8 locales were "
+#~ "discovered. This most likely requires "
+#~ "resolving by reconfiguring the locale "
+#~ "system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This system supports the C.UTF-8 locale"
+#~ " which is recommended. You might be"
+#~ " able to resolve your issue by "
+#~ "exporting the following environment variables:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This system lists some UTF-8 supporting"
+#~ " locales that you can pick from. "
+#~ "The following suitable locales were "
+#~ "discovered: {locales}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click discovered that you exported a "
+#~ "UTF-8 locale but the locale system "
+#~ "could not pick up from it because"
+#~ " it does not exist. The exported "
+#~ "locale is {locale!r} but it is not"
+#~ " supported."
+#~ msgstr ""
+
+#~ msgid "Aborted!"
+#~ msgstr ""
+
+#~ msgid "Show this message and exit."
+#~ msgstr ""
+
+#~ msgid "(Deprecated) {text}"
+#~ msgstr ""
+
+#~ msgid "Options"
+#~ msgstr "활동"
+
+#~ msgid "Got unexpected extra argument ({args})"
+#~ msgid_plural "Got unexpected extra arguments ({args})"
+#~ msgstr[0] ""
+
+#~ msgid "DeprecationWarning: The command {name!r} is deprecated."
+#~ msgstr ""
+
+#~ msgid "Commands"
+#~ msgstr ""
+
+#~ msgid "Missing command."
+#~ msgstr ""
+
+#~ msgid "No such command {name!r}."
+#~ msgstr ""
+
+#~ msgid "Value must be an iterable."
+#~ msgstr ""
+
+#~ msgid "Takes {nargs} values but 1 was given."
+#~ msgid_plural "Takes {nargs} values but {len} were given."
+#~ msgstr[0] ""
+
+#~ msgid "env var: {var}"
+#~ msgstr ""
+
+#~ msgid "(dynamic)"
+#~ msgstr ""
+
+#~ msgid "default: {default}"
+#~ msgstr ""
+
+#~ msgid "required"
+#~ msgstr ""
+
+#~ msgid "%(prog)s, version %(version)s"
+#~ msgstr ""
+
+#~ msgid "Show the version and exit."
+#~ msgstr ""
+
+#~ msgid "Error: {message}"
+#~ msgstr "트윗 메시지"
+
+#~ msgid "Try '{command} {option}' for help."
+#~ msgstr ""
+
+#~ msgid "Invalid value: {message}"
+#~ msgstr ""
+
+#~ msgid "Invalid value for {param_hint}: {message}"
+#~ msgstr ""
+
+#~ msgid "Missing argument"
+#~ msgstr ""
+
+#~ msgid "Missing option"
+#~ msgstr ""
+
+#~ msgid "Missing parameter"
+#~ msgstr ""
+
+#~ msgid "Missing {param_type}"
+#~ msgstr ""
+
+#~ msgid "Missing parameter: {param_name}"
+#~ msgstr ""
+
+#~ msgid "No such option: {name}"
+#~ msgstr ""
+
+#~ msgid "Did you mean {possibility}?"
+#~ msgid_plural "(Possible options: {possibilities})"
+#~ msgstr[0] ""
+
+#~ msgid "unknown error"
+#~ msgstr ""
+
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr ""
+
+#~ msgid "Argument {name!r} takes {nargs} values."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} does not take a value."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} requires an argument."
+#~ msgid_plural "Option {name!r} requires {nargs} arguments."
+#~ msgstr[0] ""
+
+#~ msgid "Shell completion is not supported for Bash versions older than 4.4."
+#~ msgstr ""
+
+#~ msgid "Couldn't detect Bash version, shell completion is not supported."
+#~ msgstr ""
+
+#~ msgid "Repeat for confirmation"
+#~ msgstr ""
+
+#~ msgid "Error: The value you entered was invalid."
+#~ msgstr ""
+
+#~ msgid "Error: {e.message}"
+#~ msgstr ""
+
+#~ msgid "Error: The two entered values do not match."
+#~ msgstr ""
+
+#~ msgid "Error: invalid input"
+#~ msgstr ""
+
+#~ msgid "Press any key to continue..."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose from:\n"
+#~ "\t{choices}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not {choice}."
+#~ msgid_plural "{value!r} is not one of {choices}."
+#~ msgstr[0] ""
+
+#~ msgid "{value!r} does not match the format {format}."
+#~ msgid_plural "{value!r} does not match the formats {formats}."
+#~ msgstr[0] ""
+
+#~ msgid "{value!r} is not a valid {number_type}."
+#~ msgstr ""
+
+#~ msgid "{value} is not in the range {range}."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid boolean."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid UUID."
+#~ msgstr ""
+
+#~ msgid "file"
+#~ msgstr "프로필"
+
+#~ msgid "directory"
+#~ msgstr "레코드 수정"
+
+#~ msgid "path"
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} does not exist."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a file."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a directory."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not readable."
+#~ msgstr ""
+
+#~ msgid "{len_type} values are required, but {len_value} was given."
+#~ msgid_plural "{len_type} values are required, but {len_value} were given."
+#~ msgstr[0] ""
+
+#~ msgid "File does not have an approved extension: {extensions}"
+#~ msgstr ""
+
+#~ msgid "File does not have an approved extension."
+#~ msgstr ""
+
+#~ msgid "File must be between {min_size} and {max_size} bytes."
+#~ msgstr ""
+
+#~ msgid "Invalid field name '%s'."
+#~ msgstr ""
+
+#~ msgid "Field must be equal to %(other_name)s."
+#~ msgstr ""
+
+#~ msgid "Field must be at least %(min)d character long."
+#~ msgid_plural "Field must be at least %(min)d characters long."
+#~ msgstr[0] ""
+
+#~ msgid "Field cannot be longer than %(max)d character."
+#~ msgid_plural "Field cannot be longer than %(max)d characters."
+#~ msgstr[0] ""
+
+#~ msgid "Field must be exactly %(max)d character long."
+#~ msgid_plural "Field must be exactly %(max)d characters long."
+#~ msgstr[0] ""
+
+#~ msgid "Field must be between %(min)d and %(max)d characters long."
+#~ msgstr ""
+
+#~ msgid "Number must be at least %(min)s."
+#~ msgstr ""
+
+#~ msgid "Number must be at most %(max)s."
+#~ msgstr ""
+
+#~ msgid "Number must be between %(min)s and %(max)s."
+#~ msgstr ""
+
+#~ msgid "Invalid input."
+#~ msgstr ""
+
+#~ msgid "Invalid email address."
+#~ msgstr ""
+
+#~ msgid "Invalid IP address."
+#~ msgstr ""
+
+#~ msgid "Invalid Mac address."
+#~ msgstr ""
+
+#~ msgid "Invalid URL."
+#~ msgstr ""
+
+#~ msgid "Invalid UUID."
+#~ msgstr ""
+
+#~ msgid "Invalid value, must be one of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid value, can't be any of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid CSRF Token."
+#~ msgstr ""
+
+#~ msgid "CSRF token missing."
+#~ msgstr ""
+
+#~ msgid "CSRF failed."
+#~ msgstr ""
+
+#~ msgid "CSRF token expired."
+#~ msgstr ""
+
+#~ msgid "Invalid Choice: could not coerce."
+#~ msgstr ""
+
+#~ msgid "Choices cannot be None."
+#~ msgstr ""
+
+#~ msgid "Not a valid choice."
+#~ msgstr "유효한 선택이 아닙니다"
+
+#~ msgid "Invalid choice(s): one or more data inputs could not be coerced."
+#~ msgstr ""
+
+#~ msgid "'%(value)s' is not a valid choice for this field."
+#~ msgid_plural "'%(value)s' are not valid choices for this field."
+#~ msgstr[0] ""
+
+#~ msgid "Not a valid datetime value."
+#~ msgstr "유효하지 않은 날짜 값입니다"
+
+#~ msgid "Not a valid date value."
+#~ msgstr "유효하지 않은 날짜 값입니다"
+
+#~ msgid "Not a valid time value."
+#~ msgstr "유효하지 않은 날짜 값입니다"
+
+#~ msgid "Not a valid integer value."
+#~ msgstr "유효하지 않은 날짜 값입니다"
+
+#~ msgid "Not a valid decimal value."
+#~ msgstr "유효하지 않은 날짜 값입니다"
+
+#~ msgid "Not a valid float value."
+#~ msgstr "유효하지 않은 날짜 값입니다"
+
+#~ msgid "New Password"
+#~ msgstr "비밀번호"
+
+#~ msgid "must contain digits"
+#~ msgstr "포함 안 함"
+
+#~ msgid "Password is weak: {errors}"
+#~ msgstr ""
+
+#~ msgid "password length should be more than 8"
+#~ msgstr ""
+
+#~ msgid "must have uppercase character"
+#~ msgstr ""
+
+#~ msgid "must have lowercase chartacter"
+#~ msgstr ""
+
+#~ msgid "must have minimum one special symbol"
+#~ msgstr ""
+

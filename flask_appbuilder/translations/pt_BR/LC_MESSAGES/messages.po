@@ -1,0 +1,1173 @@
+# Portuguese (Brazil) translations for PROJECT.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-12-28 11:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt_BR\n"
+"Language-Team: pt_BR <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: flask_appbuilder/const.py:126
+msgid "Access is Denied"
+msgstr "Acesso Negado"
+
+#: flask_appbuilder/fields.py:163 flask_appbuilder/fields.py:165
+#: flask_appbuilder/fields.py:226 flask_appbuilder/fields.py:233
+#: flask_appbuilder/fields.py:292
+#, fuzzy
+msgid "Not a valid choice"
+msgstr "Valor de data inválido"
+
+#: flask_appbuilder/fieldwidgets.py:159 flask_appbuilder/fieldwidgets.py:179
+msgid "Select Value"
+msgstr ""
+
+#: flask_appbuilder/messages.py:9
+#: flask_appbuilder/templates/appbuilder/general/charts/chart.html:8
+#: flask_appbuilder/templates/appbuilder/general/charts/chart_time.html:10
+#: flask_appbuilder/templates/appbuilder/general/charts/jsonchart.html:8
+#: flask_appbuilder/templates/appbuilder/general/lib.html:366
+#: flask_appbuilder/templates/appbuilder/general/model/list.html:8
+msgid "Search"
+msgstr "Pesquisar"
+
+#: flask_appbuilder/messages.py:10
+#: flask_appbuilder/templates/appbuilder/general/lib.html:373
+#: flask_appbuilder/templates/appbuilder/general/lib.html:374
+msgid "Back"
+msgstr "Voltar"
+
+#: flask_appbuilder/messages.py:11
+#: flask_appbuilder/templates/appbuilder/general/lib.html:313
+msgid "Save"
+msgstr "Salvar"
+
+#: flask_appbuilder/messages.py:12
+msgid "This field is required."
+msgstr "Campo obrigatório."
+
+#: flask_appbuilder/messages.py:13
+msgid "Not a valid date value"
+msgstr "Valor de data inválido"
+
+#: flask_appbuilder/messages.py:14
+#: flask_appbuilder/templates/appbuilder/general/widgets/base_list.html:39
+#: flask_appbuilder/templates/appbuilder/general/widgets/list_carousel.html:50
+#: flask_appbuilder/templates/appbuilder/general/widgets/list_master.html:17
+msgid "No records found"
+msgstr "Nenhum registro encontrado"
+
+#: flask_appbuilder/upload.py:158 flask_appbuilder/upload.py:210
+msgid "Invalid file extension"
+msgstr "Extensão de arquivo inválida"
+
+#: flask_appbuilder/validators.py:52
+msgid "Already exists."
+msgstr "Já existe."
+
+#: flask_appbuilder/validators.py:87
+msgid ""
+"Must have at least two capital letters, one special character, two "
+"digits, three lower case letters and a minimal length of 10."
+msgstr ""
+
+#: flask_appbuilder/views.py:57 flask_appbuilder/views.py:76
+msgid "Not authenticated"
+msgstr ""
+
+#: flask_appbuilder/views.py:84
+msgid "No new password provided"
+msgstr ""
+
+#: flask_appbuilder/views.py:87
+msgid "New password cannot be the same as the old password"
+msgstr ""
+
+#: flask_appbuilder/views.py:105
+#, fuzzy
+msgid "Password successfully changed"
+msgstr "Senha alterada"
+
+#: flask_appbuilder/charts/views.py:35
+msgid "Group by"
+msgstr "Agrupar por"
+
+#: flask_appbuilder/models/base.py:30
+msgid "Added Row"
+msgstr "Linha adicionada"
+
+#: flask_appbuilder/models/base.py:31
+msgid "Changed Row"
+msgstr "Linha modificada"
+
+#: flask_appbuilder/models/base.py:32
+msgid "Deleted Row"
+msgstr "Linha excluída"
+
+#: flask_appbuilder/models/base.py:33
+msgid "Associated data exists, please delete them first"
+msgstr "Existem dados associados, por favor exclua-os primeiro"
+
+#: flask_appbuilder/models/base.py:36 flask_appbuilder/models/base.py:39
+msgid "Integrity error, probably unique constraint"
+msgstr "Erro de integridade, provavelmente uma restrição exclusiva"
+
+#: flask_appbuilder/models/base.py:42
+msgid "General Error"
+msgstr "Erro Geral"
+
+#: flask_appbuilder/models/base.py:44
+msgid "Database Error"
+msgstr ""
+
+#: flask_appbuilder/models/group.py:32
+msgid "Count of"
+msgstr "Quantidade de"
+
+#: flask_appbuilder/models/group.py:41
+msgid "Sum of"
+msgstr "Soma de"
+
+#: flask_appbuilder/models/group.py:50
+msgid "Avg. of"
+msgstr "Média de"
+
+#: flask_appbuilder/models/generic/filters.py:20
+#: flask_appbuilder/models/mongoengine/filters.py:76
+#: flask_appbuilder/models/sqla/filters.py:120
+msgid "Contains"
+msgstr "Contêm"
+
+#: flask_appbuilder/models/generic/filters.py:31
+msgid "Contains (insensitive)"
+msgstr ""
+
+#: flask_appbuilder/models/generic/filters.py:38
+#: flask_appbuilder/models/mongoengine/filters.py:84
+#: flask_appbuilder/models/sqla/filters.py:129
+msgid "Not Contains"
+msgstr "Não contêm"
+
+#: flask_appbuilder/models/generic/filters.py:45
+#: flask_appbuilder/models/mongoengine/filters.py:22
+#: flask_appbuilder/models/sqla/filters.py:138
+msgid "Equal to"
+msgstr "Igual a"
+
+#: flask_appbuilder/models/generic/filters.py:52
+#: flask_appbuilder/models/mongoengine/filters.py:33
+#: flask_appbuilder/models/sqla/filters.py:148
+msgid "Not Equal to"
+msgstr "Diferente de"
+
+#: flask_appbuilder/models/generic/filters.py:59
+#: flask_appbuilder/models/mongoengine/filters.py:44
+#: flask_appbuilder/models/sqla/filters.py:159
+msgid "Greater than"
+msgstr "Maior que"
+
+#: flask_appbuilder/models/generic/filters.py:66
+#: flask_appbuilder/models/mongoengine/filters.py:52
+#: flask_appbuilder/models/sqla/filters.py:173
+msgid "Smaller than"
+msgstr "Menor que"
+
+#: flask_appbuilder/models/generic/filters.py:73
+#, fuzzy
+msgid "Start with"
+msgstr "Começa com"
+
+#: flask_appbuilder/models/mongoengine/filters.py:60
+#: flask_appbuilder/models/sqla/filters.py:84
+msgid "Starts with"
+msgstr "Começa com"
+
+#: flask_appbuilder/models/mongoengine/filters.py:68
+#: flask_appbuilder/models/sqla/filters.py:93
+msgid "Not Starts with"
+msgstr "Não começa com"
+
+#: flask_appbuilder/models/mongoengine/filters.py:92
+#: flask_appbuilder/models/sqla/filters.py:187
+msgid "Relation"
+msgstr "Relação"
+
+#: flask_appbuilder/models/mongoengine/filters.py:101
+#: flask_appbuilder/models/sqla/filters.py:229
+msgid "Relation as Many"
+msgstr "Relação para muitos"
+
+#: flask_appbuilder/models/sqla/filters.py:102
+msgid "Ends with"
+msgstr "Termina com"
+
+#: flask_appbuilder/models/sqla/filters.py:111
+msgid "Not Ends with"
+msgstr "Não termina com"
+
+#: flask_appbuilder/models/sqla/filters.py:208
+msgid "No Relation"
+msgstr "Sem relação"
+
+#: flask_appbuilder/security/forms.py:25
+msgid "OpenID"
+msgstr "OpenID"
+
+#: flask_appbuilder/security/forms.py:26 flask_appbuilder/security/forms.py:31
+#: flask_appbuilder/security/forms.py:70 flask_appbuilder/security/forms.py:109
+#: flask_appbuilder/security/views.py:158
+#: flask_appbuilder/security/views.py:407
+msgid "User Name"
+msgstr "Nome de usuário"
+
+#: flask_appbuilder/security/forms.py:27
+msgid "Remember me"
+msgstr "Lembre-me"
+
+#: flask_appbuilder/security/forms.py:32 flask_appbuilder/security/forms.py:52
+#: flask_appbuilder/security/forms.py:90 flask_appbuilder/security/views.py:159
+#: flask_appbuilder/security/views.py:306
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:30
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:27
+msgid "Password"
+msgstr "Senha"
+
+#: flask_appbuilder/security/forms.py:37 flask_appbuilder/security/forms.py:75
+#: flask_appbuilder/security/forms.py:114
+#: flask_appbuilder/security/views.py:156
+msgid "First Name"
+msgstr "Nome"
+
+#: flask_appbuilder/security/forms.py:40 flask_appbuilder/security/views.py:173
+msgid "Write the user first name or names"
+msgstr "Escreva o nome (ou nomes) do usuário"
+
+#: flask_appbuilder/security/forms.py:43 flask_appbuilder/security/forms.py:80
+#: flask_appbuilder/security/forms.py:119
+#: flask_appbuilder/security/views.py:157
+msgid "Last Name"
+msgstr "Sobrenome"
+
+#: flask_appbuilder/security/forms.py:46 flask_appbuilder/security/views.py:174
+msgid "Write the user last name"
+msgstr "Escreva o sobrenome do usuário"
+
+#: flask_appbuilder/security/forms.py:53 flask_appbuilder/security/forms.py:91
+msgid ""
+"Please use a good password policy, this application does not check this "
+"for you"
+msgstr "Use uma boa política de senha, pois esse aplicativo não verifica isso "
+
+#: flask_appbuilder/security/forms.py:61 flask_appbuilder/security/forms.py:99
+#: flask_appbuilder/security/views.py:312
+msgid "Confirm Password"
+msgstr "Confirmar senha"
+
+#: flask_appbuilder/security/forms.py:62 flask_appbuilder/security/forms.py:100
+msgid "Please rewrite the password to confirm"
+msgstr "Favor reescrever a senha para confirmar"
+
+#: flask_appbuilder/security/forms.py:63 flask_appbuilder/security/forms.py:101
+#: flask_appbuilder/security/views.py:316
+msgid "Passwords must match"
+msgstr "Senhas não conferem"
+
+#: flask_appbuilder/security/forms.py:85 flask_appbuilder/security/forms.py:124
+#: flask_appbuilder/security/views.py:161
+msgid "Email"
+msgstr "Email"
+
+#: flask_appbuilder/security/manager.py:749
+#: flask_appbuilder/security/views.py:149
+msgid "List Users"
+msgstr "Lista de usuários"
+
+#: flask_appbuilder/security/manager.py:752
+msgid "Security"
+msgstr "Segurança"
+
+#: flask_appbuilder/security/manager.py:759
+#: flask_appbuilder/security/views.py:488
+msgid "List Roles"
+msgstr "Lista de Papéis"
+
+#: flask_appbuilder/security/manager.py:770
+msgid "User's Statistics"
+msgstr "Estatísticas do Usuário"
+
+#: flask_appbuilder/security/manager.py:778
+msgid "User Registrations"
+msgstr "Registros de usuários"
+
+#: flask_appbuilder/security/manager.py:787
+#, fuzzy
+msgid "Login log"
+msgstr "Iniciar sessão"
+
+#: flask_appbuilder/security/manager.py:795
+#, fuzzy
+msgid "My login log"
+msgstr "Contagem de conexões"
+
+#: flask_appbuilder/security/manager.py:804
+msgid "Base Permissions"
+msgstr "Permissões Básicas"
+
+#: flask_appbuilder/security/manager.py:812
+msgid "Views/Menus"
+msgstr "Visões/Menus"
+
+#: flask_appbuilder/security/manager.py:822
+msgid "Permission on Views/Menus"
+msgstr "Permissões em Visões/Menus"
+
+#: flask_appbuilder/security/manager.py:926
+#: flask_appbuilder/security/manager.py:1109
+msgid "Your account is temporarily blocked due to multiple failed login attempts."
+msgstr ""
+
+#: flask_appbuilder/security/registerviews.py:55
+msgid "Account activation"
+msgstr "Ativação da conta"
+
+#: flask_appbuilder/security/registerviews.py:59
+msgid "Registration sent to your email"
+msgstr "Registro enviado para o seu e-mail"
+
+#: flask_appbuilder/security/registerviews.py:61
+msgid "Not possible to register you at the moment, try again later"
+msgstr "Não é possível registrá-lo no momento, tente novamente mais tarde"
+
+#: flask_appbuilder/security/registerviews.py:65
+msgid "Registration not found"
+msgstr "Registro não encontrado"
+
+#: flask_appbuilder/security/registerviews.py:67
+msgid "Fill out the registration form"
+msgstr "Preencha o formulário de incrição"
+
+#: flask_appbuilder/security/views.py:43
+msgid "List Base Permissions"
+msgstr "Lista de Permissões Básicas"
+
+#: flask_appbuilder/security/views.py:44
+msgid "Show Base Permission"
+msgstr "Mostrar Permissão Básica"
+
+#: flask_appbuilder/security/views.py:45
+msgid "Add Base Permission"
+msgstr "Incuir Permissão Básica"
+
+#: flask_appbuilder/security/views.py:46
+msgid "Edit Base Permission"
+msgstr "Editar Permissão Básica"
+
+#: flask_appbuilder/security/views.py:48 flask_appbuilder/security/views.py:60
+#: flask_appbuilder/security/views.py:497
+msgid "Name"
+msgstr "Nome"
+
+#: flask_appbuilder/security/views.py:55
+msgid "List View Menus"
+msgstr "Menus de exibição de lista"
+
+#: flask_appbuilder/security/views.py:56
+msgid "Show View Menu"
+msgstr "Mostrar menu Exibir"
+
+#: flask_appbuilder/security/views.py:57
+msgid "Add View Menu"
+msgstr "Adicionar menu Exibir"
+
+#: flask_appbuilder/security/views.py:58
+msgid "Edit View Menu"
+msgstr "Editar menu Exibir"
+
+#: flask_appbuilder/security/views.py:67
+msgid "List Permissions on Views/Menus"
+msgstr "Lista Permissões em Visões/Menus"
+
+#: flask_appbuilder/security/views.py:68
+msgid "Show Permission on Views/Menus"
+msgstr "Mostrar Permissão em Visões/Menus"
+
+#: flask_appbuilder/security/views.py:69
+msgid "Add Permission on Views/Menus"
+msgstr "Incluir Permissão em Visões/Menus"
+
+#: flask_appbuilder/security/views.py:70
+msgid "Edit Permission on Views/Menus"
+msgstr "Editar Permissão em Visões/Menus"
+
+#: flask_appbuilder/security/views.py:73
+msgid "Permission"
+msgstr "Permissão"
+
+#: flask_appbuilder/security/views.py:74
+msgid "View/Menu"
+msgstr "Visão/Menu"
+
+#: flask_appbuilder/security/views.py:86 flask_appbuilder/security/views.py:102
+msgid "Reset Password Form"
+msgstr "Formulário de redefinição de senha"
+
+#: flask_appbuilder/security/views.py:88 flask_appbuilder/security/views.py:104
+msgid "Password Changed"
+msgstr "Senha alterada"
+
+#: flask_appbuilder/security/views.py:114
+#, fuzzy
+msgid "Edit User Information"
+msgstr "Sua informação de usuário"
+
+#: flask_appbuilder/security/views.py:116
+#, fuzzy
+msgid "User information changed"
+msgstr "Sua informação de usuário"
+
+#: flask_appbuilder/security/views.py:150
+msgid "Show User"
+msgstr "Mostrar Usuário"
+
+#: flask_appbuilder/security/views.py:151
+msgid "Add User"
+msgstr "Adicionar Usuário"
+
+#: flask_appbuilder/security/views.py:152
+#: flask_appbuilder/security/views.py:250
+msgid "Edit User"
+msgstr "Editar Usuário"
+
+#: flask_appbuilder/security/views.py:155
+msgid "Full Name"
+msgstr "Nome completo"
+
+#: flask_appbuilder/security/views.py:160
+msgid "Is Active?"
+msgstr "Ativo?"
+
+#: flask_appbuilder/security/views.py:162
+msgid "Role"
+msgstr "Papel"
+
+#: flask_appbuilder/security/views.py:163
+msgid "Last login"
+msgstr "Última conexão"
+
+#: flask_appbuilder/security/views.py:164
+#: flask_appbuilder/security/views.py:408
+msgid "Login count"
+msgstr "Contagem de conexões"
+
+#: flask_appbuilder/security/views.py:165
+#: flask_appbuilder/security/views.py:409
+msgid "Failed login count"
+msgstr "Falha na contagem de conexões"
+
+#: flask_appbuilder/security/views.py:166
+msgid "Created on"
+msgstr "Criado em"
+
+#: flask_appbuilder/security/views.py:167
+msgid "Created by"
+msgstr "Criado por"
+
+#: flask_appbuilder/security/views.py:168
+msgid "Changed on"
+msgstr "Modificado em"
+
+#: flask_appbuilder/security/views.py:169
+msgid "Changed by"
+msgstr "Modificado por"
+
+#: flask_appbuilder/security/views.py:175
+msgid "Username valid for authentication on DB or LDAP, unused for OID auth"
+msgstr ""
+"Nome de usuário válido para autenticação em BD ou LDAP, não usado por "
+"autenticação OID"
+
+#: flask_appbuilder/security/views.py:178
+#: flask_appbuilder/security/views.py:307
+msgid "The user's password for authentication"
+msgstr ""
+
+#: flask_appbuilder/security/views.py:179
+msgid "It's not a good policy to remove a user, just make it inactive"
+msgstr "Não é uma boa política remover um usuário, apenas torne-o inativo"
+
+#: flask_appbuilder/security/views.py:182
+msgid "The user's email, this will also be used for OID auth"
+msgstr "O email do usuário, que também será usado para autenticação OID"
+
+#: flask_appbuilder/security/views.py:188
+#: flask_appbuilder/security/views.py:313
+msgid "Please rewrite the user's password to confirm"
+msgstr "Favor reescrever a senha do usuário para confirmar"
+
+#: flask_appbuilder/security/views.py:195
+#: flask_appbuilder/security/views.py:220
+msgid "User info"
+msgstr "Informação do Usuário"
+
+#: flask_appbuilder/security/views.py:199
+#: flask_appbuilder/security/views.py:224
+msgid "Personal Info"
+msgstr "Informação Pessoal"
+
+#: flask_appbuilder/security/views.py:203
+msgid "Audit Info"
+msgstr "Informação de Auditoria"
+
+#: flask_appbuilder/security/views.py:233
+msgid "Your user information"
+msgstr "Sua informação de usuário"
+
+#: flask_appbuilder/security/views.py:375
+msgid "Reset my password"
+msgstr "Redefinir minha senha"
+
+#: flask_appbuilder/security/views.py:386
+msgid "Reset Password"
+msgstr "Redefinir senha"
+
+#: flask_appbuilder/security/views.py:405
+msgid "User Statistics"
+msgstr "Estatísticas do Usuário"
+
+#: flask_appbuilder/security/views.py:443
+#: flask_appbuilder/security/views.py:527
+msgid "List of Registration Requests"
+msgstr "Lista de solicitações de registro"
+
+#: flask_appbuilder/security/views.py:444
+#: flask_appbuilder/security/views.py:528
+msgid "Show Registration"
+msgstr "Mostrar Registro"
+
+#: flask_appbuilder/security/views.py:489
+msgid "Show Role"
+msgstr "Mostrar Papel"
+
+#: flask_appbuilder/security/views.py:490
+msgid "Add Role"
+msgstr "Adicionar Papel"
+
+#: flask_appbuilder/security/views.py:491
+msgid "Edit Role"
+msgstr "Editar Papel"
+
+#: flask_appbuilder/security/views.py:498
+msgid "Permissions"
+msgstr "Permissões"
+
+#: flask_appbuilder/security/views.py:508
+msgid "Copy Role"
+msgstr "Copiar Papel"
+
+#: flask_appbuilder/security/views.py:509
+msgid "Copy the selected roles?"
+msgstr "Copiar os papeis selecionados"
+
+#: flask_appbuilder/security/views.py:537
+msgid "Invalid login. Please try again."
+msgstr "Login inválido. Por favor, tente novamente."
+
+#: flask_appbuilder/security/views.py:538
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:46
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:40
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:52
+msgid "Sign In"
+msgstr "Entrar"
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:42
+msgid "Check the checkbox to agree with"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:43
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:48
+#, fuzzy
+msgid "User Agreement"
+msgstr "Nome de usuário"
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:46
+msgid "I have read and agree with"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/agree_nda.html:49
+msgid "Send"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:115
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:37
+msgid "Profile"
+msgstr "Perfil"
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:116
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:38
+msgid "Logout"
+msgstr "Sair"
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:122
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:43
+msgid "Login"
+msgstr "Iniciar sessão"
+
+#: flask_appbuilder/templates/appbuilder/change_password.html:14
+#: flask_appbuilder/templates/appbuilder/change_password.html:23
+#, fuzzy
+msgid "Change Password"
+msgstr "Confirmar senha"
+
+#: flask_appbuilder/templates/appbuilder/change_password.html:20
+msgid ""
+"Your account password has expired. Please enter your new password in the "
+"input field below"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/security/activation.html:5
+#: flask_appbuilder/templates/appbuilder/index.html:4
+msgid "Welcome"
+msgstr "Bem Vindo"
+
+#: flask_appbuilder/templates/appbuilder/general/confirm.html:6
+#, fuzzy
+msgid "User confirmation needed"
+msgstr "É necessária a confirmação do usuário"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:76
+msgid "Actions"
+msgstr "Ações"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:115
+msgid "Page size"
+msgstr "Tamanho da página"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:135
+msgid "Order by"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:333
+msgid "Record Count"
+msgstr "Quantidade de Registros"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:382
+msgid "Add a new record"
+msgstr "Incluir um novo registro"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:383
+msgid "Add"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:390
+msgid "Edit record"
+msgstr "Editar registro"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:391
+msgid "Edit"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:398
+msgid "Show record"
+msgstr "Mostrar registro"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:399
+msgid "Show"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:410
+msgid "Delete record"
+msgstr "Excluir registro"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:412
+msgid "Delete"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:419
+#, fuzzy
+msgid "Are you sure you want to delete this item?"
+msgstr "Tem certeza que quer excluir este item?"
+
+#: flask_appbuilder/templates/appbuilder/general/charts/chart_time.html:17
+msgid "Group by fields"
+msgstr "Agrupado por campos"
+
+#: flask_appbuilder/templates/appbuilder/general/model/edit.html:9
+#: flask_appbuilder/templates/appbuilder/general/model/show.html:9
+msgid "Detail"
+msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/security/activation.html:7
+msgid "Your user is activated you can now proceed to login"
+msgstr "Seu usuário está ativado e agora você pode prosseguir com o login"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:18
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:16
+msgid "Enter your login and password below"
+msgstr "Digite seu nome de usuário e senha abaixo"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:20
+#: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:18
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:49
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:60
+msgid "If you are not already a user, please register"
+msgstr "Se ainda não for um usuário, por favor registre-se"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_db.html:50
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:61
+msgid "Register"
+msgstr "Registro"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oauth.html:20
+#, fuzzy
+msgid "Sign In with "
+msgstr "Entrar usando:"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:15
+msgid "Click on your OpenID provider below"
+msgstr "Clique no provedor OpenID abaixo"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:29
+msgid "Or enter your OpenID here"
+msgstr "Ou entre com sua OpenID aqui"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:33
+msgid "Please choose a provider"
+msgstr "Por favor, escolha um dos seguintes"
+
+#: flask_appbuilder/templates/appbuilder/general/security/login_oid.html:37
+msgid "Enter your OpenID Username"
+msgstr "Digite seu nome de usuário OpenID"
+
+#: flask_appbuilder/templates/appbuilder/general/security/register_oauth.html:15
+msgid "Sign in using:"
+msgstr "Entrar usando:"
+
+#: flask_appbuilder/templates/appbuilder/general/widgets/search.html:8
+msgid "Add Filter"
+msgstr "Incluir filtro"
+
+#~ msgid ""
+#~ "The user role on the application, "
+#~ "this will associate with a list of"
+#~ " permissions"
+#~ msgstr ""
+#~ "O papel do usuário na aplicação, "
+#~ "que será associado com uma lista "
+#~ "de permissões"
+
+#~ msgid "Please choose one of the following providers:"
+#~ msgstr "Por favor, escolha um dos seguintes:"
+
+#~ msgid "Emp. Number"
+#~ msgstr ""
+
+#~ msgid "Employee Number"
+#~ msgstr ""
+
+#~ msgid "List Groups"
+#~ msgstr ""
+
+#~ msgid "Manage Groups"
+#~ msgstr ""
+
+#~ msgid "List Contacts"
+#~ msgstr ""
+
+#~ msgid "Contacts Chart"
+#~ msgstr ""
+
+#~ msgid "Contacts Birth Chart"
+#~ msgstr ""
+
+#~ msgid "Tweet message"
+#~ msgstr ""
+
+#~ msgid "Test Field One"
+#~ msgstr ""
+
+#~ msgid "My form View"
+#~ msgstr ""
+
+#~ msgid "Page not found"
+#~ msgstr "Registro não encontrado"
+
+#~ msgid "{editor}: Editing failed"
+#~ msgstr ""
+
+#~ msgid "{editor}: Editing failed: {e}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click will abort further execution "
+#~ "because Python was configured to use "
+#~ "ASCII as encoding for the environment."
+#~ " Consult https://click.palletsprojects.com/unicode-"
+#~ "support/ for mitigation steps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional information: on this system "
+#~ "no suitable UTF-8 locales were "
+#~ "discovered. This most likely requires "
+#~ "resolving by reconfiguring the locale "
+#~ "system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This system supports the C.UTF-8 locale"
+#~ " which is recommended. You might be"
+#~ " able to resolve your issue by "
+#~ "exporting the following environment variables:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This system lists some UTF-8 supporting"
+#~ " locales that you can pick from. "
+#~ "The following suitable locales were "
+#~ "discovered: {locales}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click discovered that you exported a "
+#~ "UTF-8 locale but the locale system "
+#~ "could not pick up from it because"
+#~ " it does not exist. The exported "
+#~ "locale is {locale!r} but it is not"
+#~ " supported."
+#~ msgstr ""
+
+#~ msgid "Aborted!"
+#~ msgstr ""
+
+#~ msgid "Show this message and exit."
+#~ msgstr ""
+
+#~ msgid "(Deprecated) {text}"
+#~ msgstr ""
+
+#~ msgid "Options"
+#~ msgstr "Ações"
+
+#~ msgid "Got unexpected extra argument ({args})"
+#~ msgid_plural "Got unexpected extra arguments ({args})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "DeprecationWarning: The command {name!r} is deprecated."
+#~ msgstr ""
+
+#~ msgid "Commands"
+#~ msgstr ""
+
+#~ msgid "Missing command."
+#~ msgstr ""
+
+#~ msgid "No such command {name!r}."
+#~ msgstr ""
+
+#~ msgid "Value must be an iterable."
+#~ msgstr ""
+
+#~ msgid "Takes {nargs} values but 1 was given."
+#~ msgid_plural "Takes {nargs} values but {len} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "env var: {var}"
+#~ msgstr ""
+
+#~ msgid "(dynamic)"
+#~ msgstr ""
+
+#~ msgid "default: {default}"
+#~ msgstr ""
+
+#~ msgid "required"
+#~ msgstr ""
+
+#~ msgid "%(prog)s, version %(version)s"
+#~ msgstr ""
+
+#~ msgid "Show the version and exit."
+#~ msgstr ""
+
+#~ msgid "Error: {message}"
+#~ msgstr ""
+
+#~ msgid "Try '{command} {option}' for help."
+#~ msgstr ""
+
+#~ msgid "Invalid value: {message}"
+#~ msgstr ""
+
+#~ msgid "Invalid value for {param_hint}: {message}"
+#~ msgstr ""
+
+#~ msgid "Missing argument"
+#~ msgstr ""
+
+#~ msgid "Missing option"
+#~ msgstr ""
+
+#~ msgid "Missing parameter"
+#~ msgstr ""
+
+#~ msgid "Missing {param_type}"
+#~ msgstr ""
+
+#~ msgid "Missing parameter: {param_name}"
+#~ msgstr ""
+
+#~ msgid "No such option: {name}"
+#~ msgstr ""
+
+#~ msgid "Did you mean {possibility}?"
+#~ msgid_plural "(Possible options: {possibilities})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "unknown error"
+#~ msgstr ""
+
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr ""
+
+#~ msgid "Argument {name!r} takes {nargs} values."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} does not take a value."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} requires an argument."
+#~ msgid_plural "Option {name!r} requires {nargs} arguments."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Shell completion is not supported for Bash versions older than 4.4."
+#~ msgstr ""
+
+#~ msgid "Couldn't detect Bash version, shell completion is not supported."
+#~ msgstr ""
+
+#~ msgid "Repeat for confirmation"
+#~ msgstr "É necessária a confirmação do usuário"
+
+#~ msgid "Error: The value you entered was invalid."
+#~ msgstr ""
+
+#~ msgid "Error: {e.message}"
+#~ msgstr ""
+
+#~ msgid "Error: The two entered values do not match."
+#~ msgstr ""
+
+#~ msgid "Error: invalid input"
+#~ msgstr ""
+
+#~ msgid "Press any key to continue..."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose from:\n"
+#~ "\t{choices}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not {choice}."
+#~ msgid_plural "{value!r} is not one of {choices}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} does not match the format {format}."
+#~ msgid_plural "{value!r} does not match the formats {formats}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} is not a valid {number_type}."
+#~ msgstr ""
+
+#~ msgid "{value} is not in the range {range}."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid boolean."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid UUID."
+#~ msgstr ""
+
+#~ msgid "file"
+#~ msgstr "Perfil"
+
+#~ msgid "directory"
+#~ msgstr "Editar registro"
+
+#~ msgid "path"
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} does not exist."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a file."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a directory."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not readable."
+#~ msgstr ""
+
+#~ msgid "{len_type} values are required, but {len_value} was given."
+#~ msgid_plural "{len_type} values are required, but {len_value} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "File does not have an approved extension: {extensions}"
+#~ msgstr ""
+
+#~ msgid "File does not have an approved extension."
+#~ msgstr ""
+
+#~ msgid "File must be between {min_size} and {max_size} bytes."
+#~ msgstr ""
+
+#~ msgid "Invalid field name '%s'."
+#~ msgstr ""
+
+#~ msgid "Field must be equal to %(other_name)s."
+#~ msgstr ""
+
+#~ msgid "Field must be at least %(min)d character long."
+#~ msgid_plural "Field must be at least %(min)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field cannot be longer than %(max)d character."
+#~ msgid_plural "Field cannot be longer than %(max)d characters."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field must be exactly %(max)d character long."
+#~ msgid_plural "Field must be exactly %(max)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field must be between %(min)d and %(max)d characters long."
+#~ msgstr ""
+
+#~ msgid "Number must be at least %(min)s."
+#~ msgstr ""
+
+#~ msgid "Number must be at most %(max)s."
+#~ msgstr ""
+
+#~ msgid "Number must be between %(min)s and %(max)s."
+#~ msgstr ""
+
+#~ msgid "Invalid input."
+#~ msgstr ""
+
+#~ msgid "Invalid email address."
+#~ msgstr ""
+
+#~ msgid "Invalid IP address."
+#~ msgstr ""
+
+#~ msgid "Invalid Mac address."
+#~ msgstr ""
+
+#~ msgid "Invalid URL."
+#~ msgstr ""
+
+#~ msgid "Invalid UUID."
+#~ msgstr ""
+
+#~ msgid "Invalid value, must be one of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid value, can't be any of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid CSRF Token."
+#~ msgstr ""
+
+#~ msgid "CSRF token missing."
+#~ msgstr ""
+
+#~ msgid "CSRF failed."
+#~ msgstr ""
+
+#~ msgid "CSRF token expired."
+#~ msgstr ""
+
+#~ msgid "Invalid Choice: could not coerce."
+#~ msgstr ""
+
+#~ msgid "Choices cannot be None."
+#~ msgstr ""
+
+#~ msgid "Not a valid choice."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "Invalid choice(s): one or more data inputs could not be coerced."
+#~ msgstr ""
+
+#~ msgid "'%(value)s' is not a valid choice for this field."
+#~ msgid_plural "'%(value)s' are not valid choices for this field."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Not a valid datetime value."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "Not a valid date value."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "Not a valid time value."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "Not a valid integer value."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "Not a valid decimal value."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "Not a valid float value."
+#~ msgstr "Valor de data inválido"
+
+#~ msgid "New Password"
+#~ msgstr "Senha"
+
+#~ msgid "must contain digits"
+#~ msgstr "Não contêm"
+
+#~ msgid "Password is weak: {errors}"
+#~ msgstr ""
+
+#~ msgid "password length should be more than 8"
+#~ msgstr ""
+
+#~ msgid "must have uppercase character"
+#~ msgstr ""
+
+#~ msgid "must have lowercase chartacter"
+#~ msgstr ""
+
+#~ msgid "must have minimum one special symbol"
+#~ msgstr ""
+

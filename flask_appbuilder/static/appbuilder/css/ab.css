@@ -1,0 +1,82 @@
+
+.collapse.in {
+    display: block;
+    overflow: visible;
+}
+
+.panel-group .panel {
+    overflow: visible;
+}
+
+/* Wrapper for page content to push down footer */
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+
+.fixed-footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+
+th.action_checkboxes {
+    width: 1%;
+}
+
+select {
+    width: 100%;
+}
+
+td.filter {
+    width: 50%
+}
+
+.cursor-hand {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.img-select {
+    outline: 2px solid;
+}
+
+.img-unselect {
+    outline: 1px solid;
+}
+
+.fa-black {
+    color: black;
+}
+
+.banner {
+      background-color: #fff;
+      color: #000000;
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #337ab7;
+      border-radius: 10px;
+      width: 45%;
+      height:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.banner p {
+  margin: 10px 0 0;
+  font-size: 12px;
+  text-align:justify;
+}

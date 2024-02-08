@@ -1,0 +1,83 @@
+{% extends 'appbuilder/init.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agree NDA</title>
+</head>
+<body>
+{% block body %}
+    <style>
+        .nda-modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        .nda-modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* Could be more or less, depending on screen size */
+            border-radius: 10px;
+        }
+
+        .nda-modal-content p {
+            color: #000000;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+    </style>
+    <div id="ndaModal" class="nda-modal">
+        <div class="nda-modal-content">
+            <p>{{ _('Check the checkbox to agree with') }} <a href="{{ appbuilder.get_app.config.NDA_URL }}"
+                                                              target="_blank">{{ _('User Agreement') }}</a></p>
+            <form id="ndaForm">
+                <input type="checkbox" id="agreeNDA" name="agreeNDA">
+                <label for="agreeNDA">{{ _('I have read and agree with') }} <a
+                        href="{{ appbuilder.get_app.config.NDA_URL }}"
+                        target="_blank">{{ _('User Agreement') }}</a></label><br><br>
+                <button type="submit">{{ _('Send') }}</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                var modal = document.getElementById("ndaModal");
+                var form = document.getElementById("ndaForm");
+
+                form.onsubmit = function (event) {
+                    event.preventDefault(); // Prevent form submission
+                    var checkBox = document.getElementById("agreeNDA");
+                    if (checkBox.checked) {
+                        modal.style.display = "none";
+                        // Send data to server to update session
+                        fetch('/api/agree_nda', {
+                            method: 'POST',
+                            // Additional options like headers, body, etc. as needed
+                        }).then(response => {
+                        if (response.ok) {
+                            location.reload()
+                        }
+                    })
+                    } else {
+                        alert(_("Please agree to the User Agreement to continue using application."));
+                    }
+                };
+                modal.style.display = "block";
+            }, 250) // with timeout modal appears better :)
+        };
+    </script>
+{% endblock %}
+</body>
+</html>
