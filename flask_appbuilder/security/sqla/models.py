@@ -175,13 +175,21 @@ class User(Model):
         next_attempt_timedelta = current_app.config.get("FAB_BRUTEFORCE_NEXT_ATTEMPT_AFTER_BAN",
                                                                     datetime.timedelta(minutes=5))
         threshold_fail_login_count = current_app.config.get("FAB_THRESHOLD_FAIL_LOGIN_COUNT", 5)
-
-        if self.fail_login_count >= threshold_fail_login_count:
-            if self.last_failed_attempt_dttm and datetime.datetime.now() - self.last_failed_attempt_dttm < next_attempt_timedelta:
-                return True
-            else:
-                self.fail_login_count = 0
-                current_app.appbuilder.session.commit()
+        if self.fail_login_count is None:
+            self.fail_login_count = 0 
+            if self.fail_login_count >= threshold_fail_login_count:
+                if self.last_failed_attempt_dttm and datetime.datetime.now() - self.last_failed_attempt_dttm < next_attempt_timedelta:
+                    return True
+                else:
+                    self.fail_login_count = 0
+                    current_app.appbuilder.session.commit()
+        else:
+            if self.fail_login_count >= threshold_fail_login_count:
+                if self.last_failed_attempt_dttm and datetime.datetime.now() - self.last_failed_attempt_dttm < next_attempt_timedelta:
+                    return True
+                else:
+                    self.fail_login_count = 0
+                    current_app.appbuilder.session.commit()
         return False
 
     @property
