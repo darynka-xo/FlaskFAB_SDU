@@ -18,6 +18,7 @@ from flask_appbuilder.security.forms import (
     SelectDataRequired,
     UserInfoEdit,
 )
+
 from flask_appbuilder.security.utils import generate_random_string
 from flask_appbuilder.utils.base import get_safe_redirect, lazy_formatter_gettext
 from flask_appbuilder.validators import PasswordComplexityValidator
@@ -30,6 +31,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.wrappers import Response as WerkzeugResponse
 from wtforms import PasswordField, validators
 from wtforms.validators import EqualTo
+from .custom_logout import *
+from flask_login import current_user
 
 
 log = logging.getLogger(__name__)
@@ -535,14 +538,13 @@ class AuthView(BaseView):
     login_template = ""
     invalid_login_message = lazy_gettext("Invalid login. Please try again.")
     title = lazy_gettext("Sign In")
-
     @expose("/login/", methods=["GET", "POST"])
     def login(self):
         pass
 
     @expose("/logout/")
     def logout(self):
-        logout_user()
+        CustomLogoutUser.custom_logout_user(current_user)
         return redirect(
                 self.appbuilder.app.config.get(
                     "LOGOUT_REDIRECT_URL", self.appbuilder.get_url_for_index
@@ -558,6 +560,7 @@ class AuthDBView(AuthView):
         if g.user is not None and g.user.is_authenticated:
             return redirect(self.appbuilder.get_url_for_index)
         form = LoginForm_db()
+        
         if form.validate_on_submit():
             next_url = get_safe_redirect(request.args.get("next", ""))
             user = self.appbuilder.sm.auth_user_db(

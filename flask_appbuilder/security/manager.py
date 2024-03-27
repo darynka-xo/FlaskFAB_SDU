@@ -12,7 +12,7 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_login import current_user, LoginManager, logout_user
 from werkzeug.security import check_password_hash, generate_password_hash
-
+from .custom_logout import *
 from flask_appbuilder.exceptions import OAuthProviderUnknown
 from .api import SecurityApi
 from .registerviews import (
@@ -215,7 +215,6 @@ class BaseSecurityManager(AbstractSecurityManager):
     userstatschartview = UserStatsChartView
     viewmenumodelview = ViewMenuModelView
     permissionviewmodelview = PermissionViewModelView
-
     def __init__(self, appbuilder):
         super(BaseSecurityManager, self).__init__(appbuilder)
         app = self.appbuilder.get_app
@@ -2122,7 +2121,8 @@ class BaseSecurityManager(AbstractSecurityManager):
         if not current_app.config.get("ALLOW_PARALLEL_SESSIONS", False) \
                 and g.user and hasattr(g.user, 'id'):
             if not session.get('session_unique') or g.user.last_session_unique != session['session_unique']:
-                logout_user()
+                CustomLogoutUser.custom_logout_user(current_user)
+                
 
         if current_user and current_user.is_authenticated and not request.path.startswith('/static'):
             if current_user.user_should_agree_nda \
