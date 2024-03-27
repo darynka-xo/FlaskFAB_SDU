@@ -882,6 +882,7 @@ class BaseSecurityManager(AbstractSecurityManager):
             user.last_login = datetime.datetime.now()
             user.fail_login_count = 0
             login_log.status = "success"
+            login_log.reason = f"The first autorization phase has passed for user {user.username}"
         else:
             login_log.status = "fail"
             login_log.reason = f"Password autorization failed for user {user.username}"
