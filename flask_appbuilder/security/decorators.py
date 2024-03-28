@@ -144,7 +144,7 @@ def has_access(f):
             )
             ad_log = AccessDeniedLog(user_id=current_user.id, addr=request.remote_addr)
             ad_log.url = request.url
-            ad_log.reason = f"User {current_user.username} tried to access {request.url}"
+            ad_log.reason = f"User {current_user.username} tried to access {request.url} without permission"
             self.appbuilder.session.add(ad_log)
             self.appbuilder.session.commit()
             flash(as_unicode(FLAMSG_ERR_SEC_ACCESS_DENIED), "danger")
@@ -190,7 +190,7 @@ def has_access_api(f):
             )
             ad_log = AccessDeniedLog(user_id=current_user.id, addr=request.remote_addr)
             ad_log.url = request.url
-            ad_log.reason = f"User {current_user.username} tried to access API method {request.url}"
+            ad_log.reason = f"User {current_user.username} tried to access API method {request.url} without permission"
             self.appbuilder.session.add(ad_log)
             self.appbuilder.session.commit()
             if not current_user.is_authenticated:

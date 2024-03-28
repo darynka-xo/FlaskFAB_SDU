@@ -243,10 +243,10 @@ class AccessDeniedLog(Model):
     __tablename__ = "ab_access_denied_log"
     id = Column(Integer, Sequence("ab_access_denied_log_id_seq"), primary_key=True)
     user_id = Column(Integer, ForeignKey("ab_user.id"))
-    url = Column(String(64))
+    url = Column(String(1024))
     dttm = Column(DateTime, default=datetime.datetime.now)
     addr = Column(String(64))
-    reason = Column(String(64))
+    reason = Column(String(1024))
 
     user = relationship(
         "User",
