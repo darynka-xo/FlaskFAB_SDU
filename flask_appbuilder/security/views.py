@@ -31,7 +31,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.wrappers import Response as WerkzeugResponse
 from wtforms import PasswordField, validators
 from wtforms.validators import EqualTo
-from .custom_logout import *
+from .custom_logout import custom_logout_user
 from flask_login import current_user
 
 
@@ -544,7 +544,7 @@ class AuthView(BaseView):
 
     @expose("/logout/")
     def logout(self):
-        CustomLogoutUser.custom_logout_user(current_user)
+        custom_logout_user(current_user)
         return redirect(
                 self.appbuilder.app.config.get(
                     "LOGOUT_REDIRECT_URL", self.appbuilder.get_url_for_index
