@@ -23,6 +23,7 @@ from flask_jwt_extended import verify_jwt_in_request
 from flask_limiter.wrappers import RequestLimit
 from flask_login import current_user
 from typing_extensions import ParamSpec
+from .sqla.models import AccessDeniedLog
 
 log = logging.getLogger(__name__)
 
@@ -114,6 +115,7 @@ def protect(allow_browser_login=False):
 
 
 def has_access(f):
+    
     """
     Use this decorator to enable granular security permissions to your methods.
     Permissions will be associated to a role, and roles are associated to users.
@@ -126,6 +128,7 @@ def has_access(f):
         permission_str = f.__name__
 
     def wraps(self, *args, **kwargs):
+        from .sqla.models import AccessDeniedLog
         permission_str = f"{PERMISSION_PREFIX}{f._permission_name}"
         if self.method_permission_name:
             _permission_name = self.method_permission_name.get(f.__name__)
@@ -139,6 +142,11 @@ def has_access(f):
             log.warning(
                 LOGMSG_ERR_SEC_ACCESS_DENIED, permission_str, self.__class__.__name__
             )
+            ad_log = AccessDeniedLog(user_id=current_user.id, addr=request.remote_addr)
+            ad_log.url = request.url
+            ad_log.reason = f"User {current_user.username} tried to access {request.url}"
+            self.appbuilder.session.add(ad_log)
+            self.appbuilder.session.commit()
             flash(as_unicode(FLAMSG_ERR_SEC_ACCESS_DENIED), "danger")
         return redirect(
             url_for(
@@ -166,6 +174,7 @@ def has_access_api(f):
         permission_str = f.__name__
 
     def wraps(self, *args, **kwargs):
+        from .sqla.models import AccessDeniedLog
         permission_str = f"{PERMISSION_PREFIX}{f._permission_name}"
         if self.method_permission_name:
             _permission_name = self.method_permission_name.get(f.__name__)
@@ -179,12 +188,18 @@ def has_access_api(f):
             log.warning(
                 LOGMSG_ERR_SEC_ACCESS_DENIED, permission_str, self.__class__.__name__
             )
+            ad_log = AccessDeniedLog(user_id=current_user.id, addr=request.remote_addr)
+            ad_log.url = request.url
+            ad_log.reason = f"User {current_user.username} tried to access API method {request.url}"
+            self.appbuilder.session.add(ad_log)
+            self.appbuilder.session.commit()
             if not current_user.is_authenticated:
                 return response_unauthorized_mvc(401)
             return response_unauthorized_mvc(403)
 
     f._permission_name = permission_str
     return functools.update_wrapper(wraps, f)
+
 
 
 def permission_name(name):

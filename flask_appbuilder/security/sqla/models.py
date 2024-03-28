@@ -233,8 +233,27 @@ class LoginUserLog(Model):
 
     user = relationship(
         "User",
-        backref=backref("user"),
+        backref=backref("login_logs", uselist=True),  
         remote_side=[User.id],
         primaryjoin="LoginUserLog.user_id == User.id",
         uselist=False,
     )
+
+class AccessDeniedLog(Model):
+    __tablename__ = "ab_access_denied_log"
+    id = Column(Integer, Sequence("ab_access_denied_log_id_seq"), primary_key=True)
+    user_id = Column(Integer, ForeignKey("ab_user.id"))
+    url = Column(String(64))
+    dttm = Column(DateTime, default=datetime.datetime.now)
+    addr = Column(String(64))
+    reason = Column(String(64))
+
+    user = relationship(
+        "User",
+        backref=backref("access_denied_logs", uselist=True), 
+        remote_side=[User.id],
+        primaryjoin="AccessDeniedLog.user_id == User.id",
+        uselist=False,
+    )
+
+
