@@ -142,11 +142,13 @@ def has_access(f):
             log.warning(
                 LOGMSG_ERR_SEC_ACCESS_DENIED, permission_str, self.__class__.__name__
             )
-            ad_log = AccessDeniedLog(user_id=current_user.id, addr=request.remote_addr)
-            ad_log.url = request.url
-            ad_log.reason = f"User {current_user.username} tried to access {request.url} without permission"
-            self.appbuilder.session.add(ad_log)
-            self.appbuilder.session.commit()
+            if current_user.is_authenticated:
+                ad_log = AccessDeniedLog(user_id=current_user.id, addr=request.remote_addr)
+                ad_log.url = request.url
+                ad_log.reason = f"User {current_user.username} tried to access {request.url} without permission"
+                self.appbuilder.session.add(ad_log)
+                self.appbuilder.session.commit()
+            
             flash(as_unicode(FLAMSG_ERR_SEC_ACCESS_DENIED), "danger")
         return redirect(
             url_for(
