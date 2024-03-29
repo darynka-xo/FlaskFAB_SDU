@@ -2,7 +2,7 @@ import datetime
 import logging
 import re
 from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Union
-
+from flask.sessions import SecureCookieSessionInterface
 import jwt
 from flask import Flask, g, session, url_for, current_app, request, flash, redirect
 from flask_babel import lazy_gettext as _
@@ -883,7 +883,7 @@ class BaseSecurityManager(AbstractSecurityManager):
             login_log.reason = f"The first autorization phase has passed for user {user.username}"
         else:
             login_log.status = "fail"
-            login_log.reason = f"Password autorization failed for user {user.username}"
+            login_log.reason = f"The first autorization phase failed for user {user.username}"
             user.fail_login_count += 1
             user.last_failed_attempt_dttm = datetime.datetime.now()
 
