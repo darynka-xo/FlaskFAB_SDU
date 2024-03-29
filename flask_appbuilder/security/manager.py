@@ -60,6 +60,7 @@ from ..const import (
 
 log = logging.getLogger(__name__)
 
+asdf= {}
 
 class AbstractSecurityManager(BaseManager):
     """
@@ -2112,15 +2113,25 @@ class BaseSecurityManager(AbstractSecurityManager):
         # Set flask g.user to JWT user, we can't do it on before request
         g.user = user
         return user
-
+    
     @staticmethod
     def before_request():
         g.user = current_user
+        from superset.security.custom_manager import session_store
+        from .custom_logout import session_expired_log, custom_logout_user
+
+
+        user_id = session.get('user_id')
+        if not request.path.startswith('/static') and not request.path.startswith('/health'):
+            if not user_id and session_store:
+                session_expired_log(next(iter(session_store)), current_app.appbuilder, request.remote_addr)
+                session_store = {}
+
         # If parallel sessions is not allowed and user is not anonymous (have ID)
         if not current_app.config.get("ALLOW_PARALLEL_SESSIONS", False) \
                 and g.user and hasattr(g.user, 'id'):
             if not session.get('session_unique') or g.user.last_session_unique != session['session_unique']:
-                logout_user()
+                custom_logout_user(current_user, current_app.appbuilder)
                 
 
         if current_user and current_user.is_authenticated and not request.path.startswith('/static'):
