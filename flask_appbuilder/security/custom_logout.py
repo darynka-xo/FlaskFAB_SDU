@@ -2,6 +2,7 @@ from flask_login import logout_user as flask_logout_user
 from flask import request
 from .sqla.models import LoginUserLog
 import datetime
+from superset.security.custom_manager import session_store
 
 
 def custom_logout_user(user, appbuilder):
@@ -10,6 +11,7 @@ def custom_logout_user(user, appbuilder):
     login_log.reason = f"User {user.username} logged out."
     appbuilder.session.add(login_log)
     appbuilder.session.commit()
+    session_store = {}
     flask_logout_user()
 
 
