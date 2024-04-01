@@ -2131,8 +2131,9 @@ class BaseSecurityManager(AbstractSecurityManager):
         if not current_app.config.get("ALLOW_PARALLEL_SESSIONS", False) \
                 and g.user and hasattr(g.user, 'id'):
             if not session.get('session_unique') or g.user.last_session_unique != session['session_unique']:
-                custom_logout_user(current_user, current_app.appbuilder)
+                custom_logout_user(current_user, current_app.appbuilder, True)
                 
+
 
         if current_user and current_user.is_authenticated and not request.path.startswith('/static'):
             if current_user.user_should_agree_nda \
