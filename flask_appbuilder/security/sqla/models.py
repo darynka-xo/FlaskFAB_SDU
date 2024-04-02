@@ -230,6 +230,7 @@ class LoginUserLog(Model):
     dttm = Column(DateTime, default=datetime.datetime.now)
     addr = Column(String(64))
     reason = Column(String(64))
+    source = Column(String(8), default='superset')
 
     user = relationship(
         "User",
@@ -247,6 +248,7 @@ class AccessDeniedLog(Model):
     dttm = Column(DateTime, default=datetime.datetime.now)
     addr = Column(String(64))
     reason = Column(String(1024))
+    source = Column(String(8), default='superset')
 
     user = relationship(
         "User",

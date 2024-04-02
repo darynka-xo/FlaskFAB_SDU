@@ -2120,7 +2120,6 @@ class BaseSecurityManager(AbstractSecurityManager):
         from superset.security.custom_manager import session_store
         from .custom_logout import session_expired_log, custom_logout_user
 
-
         user_id = session.get('user_id')
         if not request.path.startswith('/static') and not request.path.startswith('/health'):
             if not user_id and session_store:
