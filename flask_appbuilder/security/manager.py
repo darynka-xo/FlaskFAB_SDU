@@ -881,10 +881,10 @@ class BaseSecurityManager(AbstractSecurityManager):
             user.last_login = datetime.datetime.now()
             user.fail_login_count = 0
             login_log.status = "success"
-            login_log.reason = f"The first autorization phase has passed for user {user.username}"
+            login_log.reason = f"Первый этап аутентификации прошел успешно для пользователя {user.username}"
         else:
             login_log.status = "fail"
-            login_log.reason = f"The first autorization phase failed for user {user.username}"
+            login_log.reason = f"Первый этап аутентификации не удался для пользователя {user.username}"
             user.fail_login_count += 1
             user.last_failed_attempt_dttm = datetime.datetime.now()
 
