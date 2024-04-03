@@ -229,7 +229,7 @@ class LoginUserLog(Model):
     status = Column(String(64), nullable=False)
     dttm = Column(DateTime, default=datetime.datetime.now)
     addr = Column(String(64))
-    reason = Column(String(64))
+    reason = Column(String(1024))
     source = Column(String(8), default='superset')
 
     user = relationship(
