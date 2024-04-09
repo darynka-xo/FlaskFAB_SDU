@@ -259,3 +259,13 @@ class AccessDeniedLog(Model):
     )
 
 
+class RemoteAuth(Model):
+    __tablename__ = "ab_remote_auth"
+    id = Column(Integer, Sequence("ab_remote_auth_id_seq"), primary_key=True)
+    token = Column(String(255))
+    user_id = Column(Integer, ForeignKey("ab_user.id"))
+    username = Column(String(1024))
+    consumed = Column(Boolean)
+    creationDate = Column(DateTime, default=datetime.datetime.now)
+    expirationDate = Column(DateTime, default=datetime.datetime.now)
+    consumedDate = Column(DateTime, default=datetime.datetime.now)
