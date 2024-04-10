@@ -112,6 +112,7 @@ class User(Model):
     )
     last_session_unique = Column(String(256), default=None, nullable=True)
     nda_agreed = Column(Boolean, default=False, nullable=False)
+    has_remote_access = Column(Boolean, default=False, nullable=False)
     last_password_change = Column(DateTime, default=lambda: datetime.datetime.now())
     last_failed_attempt_dttm = Column(DateTime, default=None, nullable=True)
 
@@ -259,13 +260,3 @@ class AccessDeniedLog(Model):
     )
 
 
-class RemoteAuth(Model):
-    __tablename__ = "ab_remote_auth"
-    id = Column(Integer, Sequence("ab_remote_auth_id_seq"), primary_key=True)
-    token = Column(String(255))
-    user_id = Column(Integer, ForeignKey("ab_user.id"))
-    username = Column(String(1024))
-    consumed = Column(Boolean)
-    creationDate = Column(DateTime, default=datetime.datetime.now)
-    expirationDate = Column(DateTime, default=datetime.datetime.now)
-    consumedDate = Column(DateTime, default=datetime.datetime.now)
