@@ -112,7 +112,7 @@ class User(Model):
     )
     last_session_unique = Column(String(256), default=None, nullable=True)
     nda_agreed = Column(Boolean, default=False, nullable=False)
-    has_remote_access = Column(Boolean, default=False, nullable=False)
+    has_remote_access = Column(Boolean, default=False)
     last_password_change = Column(DateTime, default=lambda: datetime.datetime.now())
     last_failed_attempt_dttm = Column(DateTime, default=None, nullable=True)
 
