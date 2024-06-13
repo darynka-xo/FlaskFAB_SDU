@@ -63,6 +63,7 @@ class Role(Model):
     permissions = relationship(
         "PermissionView", secondary=assoc_permissionview_role, backref="role"
     )
+    redirect_link = Column(String(1024), unique=False, nullable=True, default='/dashboard/list')
 
     def __repr__(self):
         return self.name
