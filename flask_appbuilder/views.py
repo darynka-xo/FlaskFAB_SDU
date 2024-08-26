@@ -98,6 +98,7 @@ class IndexView(BaseView):
 
         user.password = generate_password_hash(new_password)
         user.last_password_change = datetime.now()
+        user.login_count += 1
         self.appbuilder.get_session.add(user)
         self.appbuilder.get_session.commit()
 

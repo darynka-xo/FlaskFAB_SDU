@@ -164,8 +164,14 @@ class User(Model):
         password_change_interval = current_app.config.get("FAB_PASSWORD_CHANGE_INTERVAL_IN_SECONDS")
         if not password_change_interval:
             return False
+        if self.login_count is None:
+            return True
+        if isinstance(self.login_count, int):
+            if self.login_count <= 2:
+                return True
 
-        return self.last_password_change is None or (datetime.datetime.now() - self.last_password_change).seconds > password_change_interval
+        return self.last_password_change is None or (
+                    datetime.datetime.now() - self.last_password_change).seconds > password_change_interval
 
     @property
     def is_user_blocked_by_bruteforce(self):
