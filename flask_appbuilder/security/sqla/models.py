@@ -116,6 +116,7 @@ class User(Model):
     has_remote_access = Column(Boolean, default=False)
     last_password_change = Column(DateTime, default=lambda: datetime.datetime.now())
     last_failed_attempt_dttm = Column(DateTime, default=None, nullable=True)
+    def_pass_changed = Column(Boolean, default=False)
 
     @declared_attr
     def created_by_fk(self):
@@ -169,6 +170,8 @@ class User(Model):
         if isinstance(self.login_count, int):
             if self.login_count <= 2:
                 return True
+        if self.def_pass_changed is None or self.def_pass_changed == False:
+            return True
 
         return self.last_password_change is None or (
                     datetime.datetime.now() - self.last_password_change).seconds > password_change_interval
